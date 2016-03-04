@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'maje-mhvp'
+
+    publishedGroupId = 'com.maje.mhvp'
+    libraryName = 'motion-header-viewpager'
+    artifact = 'maje-mhvp'
+
+    libraryDescription = 'motion header viewpager'
+
+    siteUrl = 'https://github.com/majewing/motion-header-viewpager'
+    gitUrl = 'https://github.com/majewing/motion-header-viewpager.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'majewing'
+    developerName = 'majewing'
+    developerEmail = 'majewing@126.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
@@ -22,3 +46,4 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:21.0.3'
 }
+//apply from: "https://raw.githubusercontent.com/majewing/android-library-publish-to-jcenter/master/bintrayUpload.gradle"
